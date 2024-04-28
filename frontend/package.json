@@ -1,0 +1,17 @@
+{
+  "name": "card-maker-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "node .esbuild.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.20.2"
+  }
+}

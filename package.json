@@ -1,0 +1,16 @@
+{
+  "name": "card-maker",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "start-backend": "pnpm run -r --filter card-maker-backend start",
+    "build-frontend": "pnpm run -r --filter card-maker-frontend build"
+  },
+  "dependencies": {
+    "card-maker-frontend": "workspace:*",
+    "card-maker-backend": "workspace:*"
+  }
+}
