@@ -5,10 +5,12 @@
   "scripts": {
     "backend-build": "pnpm run --filter card-maker-backend build",
     "backend-start": "pnpm run --filter card-maker-backend start",
+    "backend-test": "pnpm run --filter card-maker-backend test",
     "frontend-dev": "pnpm run --filter card-maker-frontend dev",
     "frontend-build": "pnpm run --filter card-maker-frontend build",
     "frontend-start": "pnpm run --filter card-maker-frontend start",
-    "frontend-lint": "pnpm run --filter card-maker-frontend lint"
+    "frontend-lint": "pnpm run --filter card-maker-frontend lint",
+    "frontend-test": "pnpm run --filter card-maker-frontend test"
   },
   "dependencies": {
     "card-maker-backend": "workspace:*",

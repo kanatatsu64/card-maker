@@ -4,13 +4,17 @@
   "private": true,
   "scripts": {
     "build": "node .esbuild.mjs",
-    "start": "node .esbuild/bundle.js"
+    "start": "node .esbuild/bundle.js",
+    "test": "mocha"
   },
   "dependencies": {
     "express": "^4.19.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
-    "esbuild": "^0.20.2"
+    "@types/mocha": "^10.0.6",
+    "esbuild": "^0.20.2",
+    "mocha": "^10.4.0",
+    "ts-node": "^10.9.2"
   }
 }
