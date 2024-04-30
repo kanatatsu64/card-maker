@@ -1,9 +1,9 @@
 import * as esbuild from "esbuild";
 
 await esbuild.build({
-  entryPoints: ["index.tsx"],
+  entryPoints: ["app/index.tsx"],
   bundle: true,
-  outfile: "../public/bundle.js",
+  outfile: "public/index.js",
   loader: {
     ".tsx": "tsx",
     ".ts": "ts",

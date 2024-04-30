@@ -8,21 +8,9 @@ importers:
 
   .:
     dependencies:
-      card-maker-backend:
-        specifier: workspace:*
-        version: link:backend
-      card-maker-frontend:
-        specifier: workspace:*
-        version: link:frontend
-
-  backend:
-    dependencies:
       express:
         specifier: ^4.19.2
         version: 4.19.2
-
-  frontend:
-    dependencies:
       react:
         specifier: ^18.3.1
         version: 18.3.1

@@ -1,16 +1,19 @@
 {
-  "name": "card-maker",
+  "name": "card-maker-backend",
   "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": ">=14.0.0"
-  },
   "scripts": {
-    "start-backend": "pnpm run -r --filter card-maker-backend start",
-    "build-frontend": "pnpm run -r --filter card-maker-frontend build"
+    "start": "node public/server.js",
+    "build": "node .esbuild-node.mjs && node .esbuild-react.mjs"
   },
   "dependencies": {
-    "card-maker-frontend": "workspace:*",
-    "card-maker-backend": "workspace:*"
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.20.2"
   }
 }
