@@ -1,14 +1,13 @@
 import * as esbuild from "esbuild";
 
 await esbuild.build({
-  entryPoints: ["app/index.tsx"],
+  entryPoints: ["app/server.ts"],
   bundle: true,
-  outfile: "public/index.js",
+  outfile: "public/server.js",
   loader: {
-    ".tsx": "tsx",
     ".ts": "ts",
   },
   format: "esm",
   target: "es2015",
-  platform: "browser",
+  platform: "node",
 });

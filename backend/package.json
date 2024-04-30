@@ -1,0 +1,14 @@
+{
+  "name": "card-maker-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node .esbuild.mjs"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21"
+  }
+}
