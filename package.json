@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build-frontend": "pnpm run -r --filter card-maker-backend start"
+    "build-backend": "pnpm run --filter card-maker-backend build",
+    "start-backend": "pnpm run --filter card-maker-backend start",
+    "dev-frontend": "pnpm run --filter card-maker-frontend dev",
+    "build-frontend": "pnpm run --filter card-maker-frontend build",
+    "start-frontend": "pnpm run --filter card-maker-frontend start",
+    "lint-frontend": "pnpm run --filter card-maker-frontend lint"
   },
   "dependencies": {
     "card-maker-backend": "workspace:*",
