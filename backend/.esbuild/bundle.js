@@ -22202,8 +22202,10 @@ var require_express2 = __commonJS({
 // src/server.ts
 var import_express = __toESM(require_express2());
 var app = (0, import_express.default)();
-var port = 8080;
-app.use(import_express.default.static("public"));
+var port = 8081;
+app.use("/", (req, res) => {
+  res.send("Hello, world!");
+});
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);
 });
